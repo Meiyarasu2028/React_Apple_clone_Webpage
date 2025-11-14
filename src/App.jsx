@@ -3,6 +3,8 @@ import Navbar from './components/Navbar/Navbar'
 import OfferText from './components/OfferText'
 import Header from './components/Header'
 import Hero from './components/Hero'
+import Subhero from './components/Subhero'
+import AppleSlider from './components/AppleSlider'
 
 function App() {
   return (
@@ -11,6 +13,8 @@ function App() {
       <OfferText/>
       <Header/>
       <Hero/>
+      <Subhero/>
+      <AppleSlider/>
     </>
   )
 }

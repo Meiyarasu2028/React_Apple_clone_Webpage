@@ -45,20 +45,24 @@ export default function Navbar() {
 
     return (
         <div className="sticky top-0 z-50 w-full">
-            <div className="flex items-center justify-center space-x-10 bg-black/90 text-gray-300 p-4 text-xs">
+            <div className="flex items-center justify-between md:justify-center space-x-10 bg-black/90 text-gray-300 p-4 text-xs">
 
-                <p className="text-lg">
-                    <FaApple />
-                </p>
+                <div>
+                    <p className="text-lg">
+                        <FaApple />
+                    </p>
+                </div>
 
-                {navItems.map((item, i) => {
-                    const Component = componentMap[item.name];
-                    return (
-                        <NavItem key={i} item={item}>
-                            {Component && <Component />}
-                        </NavItem>
-                    );
-                })}
+                <div className="hidden md:flex gap-12 ">
+                    {navItems.map((item, i) => {
+                        const Component = componentMap[item.name];
+                        return (
+                            <NavItem key={i} item={item}>
+                                {Component && <Component />}
+                            </NavItem>
+                        );
+                    })}
+                </div>
 
                 {/* if else explain method if incase componentmap methos is confused if You use if method */}
                 {/* {navItems.map((item, i) => {
@@ -95,12 +99,14 @@ export default function Navbar() {
 
                 })} */}
 
-                <p className="text-sm">
-                    <FaSearch />
-                </p>
-                <p className="text-sm">
-                    <FaShoppingBag />
-                </p>
+                <div className="flex gap-5">
+                    <p className="text-sm">
+                        <FaSearch />
+                    </p>
+                    <p className="text-sm">
+                        <FaShoppingBag />
+                    </p>
+                </div>
             </div>
         </div>
     );

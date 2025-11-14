@@ -1,0 +1,45 @@
+/* Container */
+.slider-container {
+  position: relative;
+  width: 90%;
+  height: 500px;
+  background: #000;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+
+
+}
+
+/* Image */
+.slide-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Dots wrapper */
+.slider-dots {
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+/* Each dot */
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #cfcfcf;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+/* Active dot */
+.dot.active {
+  background-color: #333;
+  transform: scale(1.3);
+}
