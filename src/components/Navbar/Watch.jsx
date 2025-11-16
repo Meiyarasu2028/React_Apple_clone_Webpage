@@ -26,7 +26,7 @@ const Mac = () => {
     ])
     return (
         <>
-            <div className='flex p-10 gap-20 cursor-pointer'>
+            <div className='flex p-10 md:gap-20 cursor-pointer'>
                 <div className='text-xl font-sans font-medium pl-28'>
                     <p className='text-[14px] text-gray-500 cursor-default'>Explore Mac</p>
                     {

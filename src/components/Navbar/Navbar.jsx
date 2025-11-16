@@ -45,7 +45,7 @@ export default function Navbar() {
 
     return (
         <div className="sticky top-0 z-50 w-full">
-            <div className="flex items-center justify-between md:justify-center space-x-10 bg-black/90 text-gray-300 p-4 text-xs">
+            <div className="flex items-center justify-between px-6 lg:space-x-10 md:space-x-5 bg-black/90 text-gray-300 p-4 text-xs">
 
                 <div>
                     <p className="text-lg">
@@ -53,7 +53,7 @@ export default function Navbar() {
                     </p>
                 </div>
 
-                <div className="hidden md:flex gap-12 ">
+                <div className="hidden lg:flex md:gap-5 ">
                     {navItems.map((item, i) => {
                         const Component = componentMap[item.name];
                         return (
