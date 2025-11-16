@@ -16,7 +16,7 @@ import Support from "./Support";
 
 export default function Navbar() {
 
-    const [navItems] = useState([
+    const [navItems,setnavItem] = useState([
         { name: "Store", href: "#" },
         { name: "Mac", href: "#" },
         { name: "iPad", href: "#" },
@@ -54,10 +54,10 @@ export default function Navbar() {
                 </div>
 
                 <div className="hidden lg:flex md:gap-5 ">
-                    {navItems.map((item, i) => {
-                        const Component = componentMap[item.name];
+                    {navItems.map((navItem, i) => {
+                        const Component = componentMap[navItem.name];
                         return (
-                            <NavItem key={i} item={item}>
+                            <NavItem key={i} navItem={navItem}>
                                 {Component && <Component />}
                             </NavItem>
                         );

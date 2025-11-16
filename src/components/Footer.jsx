@@ -107,7 +107,6 @@ export default function Footer() {
     return (
         <footer className="bg-[#f5f5f7] text-gray-700 w-full py-6 px-4">
 
-            {/* DESKTOP EXACT APPLE STYLE */}
             <div className="hidden md:grid grid-cols-5 gap-4 max-w-6xl mx-auto">
                 {footerData.map((section, index) => (
                     <div key={index}>

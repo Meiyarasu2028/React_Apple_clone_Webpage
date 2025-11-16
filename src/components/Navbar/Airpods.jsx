@@ -34,8 +34,8 @@ const Airpods = () => {
                 <div className='text-[14px] font-sans font-medium '>
                     <p className='text-[14px] text-gray-500 cursor-default mb-2 mt-1'>Shop Mac</p>
                     {
-                        quickLinks.map(function (shop, i) {
-                            return <p className='mb-2' key={i}><a href={shop.Link}>{shop.name}</a></p>
+                        quickLinks.map(function (quickLinks, i) {
+                            return <p className='mb-2' key={i}><a href={quickLinks.Link}>{quickLinks.name}</a></p>
                         })
                     }
                 </div>
@@ -43,8 +43,8 @@ const Airpods = () => {
                 <div className='text-[14px] font-sans font-medium '>
                     <p className='text-[14px] text-gray-500 cursor-default mb-2 mt-1'>More from Mac</p>
                     {
-                        store.map(function (shop, i) {
-                            return <p className='mb-2' key={i}><a href={shop.Link}>{shop.name}</a></p>
+                        store.map(function (store, i) {
+                            return <p className='mb-2' key={i}><a href={store.Link}>{store.name}</a></p>
                         })
                     }
                 </div>
