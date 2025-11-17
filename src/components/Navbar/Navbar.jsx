@@ -45,7 +45,7 @@ export default function Navbar() {
 
     return (
         <div className="sticky top-0 z-50 w-full">
-            <div className="flex items-center justify-between px-6 lg:space-x-10 md:space-x-5 bg-black/90 text-gray-300 p-4 text-xs">
+            <div className="flex items-center justify-between md:justify-center px-6 lg:space-x-10 md:space-x-5 bg-black/90 text-gray-300 p-4 text-xs">
 
                 <div>
                     <p className="text-lg">

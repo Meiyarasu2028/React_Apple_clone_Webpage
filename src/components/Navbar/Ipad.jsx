@@ -29,7 +29,7 @@ const Ipad = () => {
     ])
     return (
         <>
-            <div className='flex p-10 gap-20 cursor-pointer'>
+            <div className='flex p-10 gap-20 cursor-pointer pl-40'>
                 <div className='text-xl font-sans font-medium pl-28'>
                     <p className='text-[14px] text-gray-500 cursor-default'>Explore iPad</p>
                     {
@@ -39,7 +39,7 @@ const Ipad = () => {
                     }
                 </div>
 
-                <div className='text-[14px] font-sans font-medium '>
+                <div className='text-[14px] font-sans font-medium'>
                     <p className='text-[14px] text-gray-500 cursor-default mb-2 mt-1'>Shop iPad</p>
                     {
                         quickLinks.map(function (quickLinks, i) {
